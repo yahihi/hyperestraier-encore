@@ -26,12 +26,12 @@
 #define SNIPWWIDTH     480               /* whole width of the snippet */
 #define SNIPHWIDTH     96                /* width of beginning of the text */
 #define SNIPAWIDTH     96                /* width around each highlighted word */
-#define CACHEMAX       (1048576*1024)    /* maximum chache size */
+#define CACHEMAX       (1048576*4096)    /* maximum chache size */
 #define MEMCHKFREQ     32                /* frequency of checking memory exhaust */
 #define MEMCHKALW      (1048576*64)      /* allowance of checking memory exhaust */
 #define MEMLOADMAX     0.9               /* max load ratio of the physical memory */
-#define LIMITTSIZ      (1024*128)        /* text size limitation */
-#define LIMITFSIZ      (1048576*32)      /* file size limitation */
+#define LIMITTSIZ      (1024*1024*10)    /* text size limitation */
+#define LIMITFSIZ      (1048576*4096)    /* file size limitation */
 #define DATTRLPATH     "_lpath"          /* name of the attribute of the URI of local path */
 #define DATTRLREAL     "_lreal"          /* name of the attribute of the real path */
 #define DATTRLFILE     "_lfile"          /* name of the attribute of the file name */
